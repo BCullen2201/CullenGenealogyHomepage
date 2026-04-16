@@ -19,14 +19,14 @@
     line-height: 1.2rem;
 }
 
-.note-head { /* Appears only on Laigen-Verify.html,  */
+.note-head { /* Appears only on Laigen-Verify.html, used to create a note 'window' */
     margin: 0;
     padding: 6px 1em;
     background-color: #282828;
     border: 3px solid black;
 }
 
-.note-body {
+.note-body { /* same as above */
     margin: 0;
     padding: 0 1em;
     background-color: #5a5a5a;
