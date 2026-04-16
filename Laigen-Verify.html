@@ -2,9 +2,12 @@
 <html>
 <head>
 <title>Laigen - Verification Instructions</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-    p {
-        font-weight: bold;
+    .main {display:grid;grid-auto-rows:auto;margin:1.5em 25%;}
+    p {font-weight: bold;}
+    @media only screen and (max-width:1280px) {
+        .main {margin:1.5em 0;display:grid;grid-auto-rows:auto;}
     }
 </style>
 </head>
@@ -15,7 +18,7 @@
 
 <center><h1 style="margin:0;">Instructions for verifying Laigen2.zip</h1></center><br><hr width="98%">
 
-<div style="display:flexbox;align-items:center;margin:1.5em 25%;">
+<div class="main">
 <p>Download both <i>Laigen2.zip</i> and <i>Laigen2.zip.asc</i> and place them in the same folder.</p>
 <p><a style="color:lightskyblue;"href="https://openpgp.org/"target="_blank">OpenPGP</a>-compliant software is needed to verify authenticity. <a style="color:lightskyblue;"href="https://gnupg.org/"target="_blank">GnuPG</a> is what will be used in the instructions below. If you're using another kind of OpenPGP-compliant software, you should look for instructions written specifically for your choice of software.</p>
 <p>If you're using GnuPG, the instructions below apply to all platforms when using a terminal, even on mobile.</p>
