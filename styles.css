@@ -12,6 +12,13 @@
     line-height:1.4;
 }
 
+.loc { /* loc, short for 'line of code'. Appears only on Laigen-Verify.html, used to place monospace text inline with regular text */
+    font-family: monospace;
+    border: 1px solid black;
+    background-color: #494949;
+    line-height: 1.2rem;
+}
+
 .note-head { /* Appears only on Laigen-Verify.html,  */
     margin: 0;
     padding: 6px 1em;
