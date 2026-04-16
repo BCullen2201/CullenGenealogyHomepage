@@ -12,14 +12,14 @@
     line-height:1.4;
 }
 
-div .note-head { /* Appears only on Laigen-Verify.html,  */
+.note-head { /* Appears only on Laigen-Verify.html,  */
     margin: 0;
     padding: 6px 1em;
     background-color: #282828;
     border: 3px solid black;
 }
 
-div .note-body {
+.note-body {
     margin: 0;
     padding: 0 1em;
     background-color: #5a5a5a;
