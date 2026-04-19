@@ -37,22 +37,25 @@ body { /* just used to get rid of margin for body */
 }
 
 .header { /* contains links to homepage, and whatever else we decide to put in it */
-    border: 3px solid black;
+    border-bottom: 3px solid black;
     position: sticky;
-    width: 100%;
+    width: auto;
+    margin-left: 5.8em;
+    padding: 1em;
     top: 0;
     background-color: white;
+    display: flex;
+    align-items: center;
 }
 
 .header-images { /* centers images in header */
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .header-images img {
     width: auto;
-    height: 6em;
+    height: 5em;
 }
 
 .content { /* this contains all of the contents of the page, except content from mainpages-nav and footer */
