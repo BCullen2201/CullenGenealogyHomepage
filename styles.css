@@ -1,3 +1,7 @@
+/* ==================================================== */
+/* ==================== MAIN PAGES ==================== */
+/* ==================================================== */
+
 body { /* just used to get rid of margin for body */
     margin: 0;
 }
@@ -7,6 +11,10 @@ body { /* just used to get rid of margin for body */
     width: auto;
     grid-auto-rows: auto;
     margin: 0 25%;
+}
+
+.content { /* this contains all of the contents of the page, except for mainpages-nav, header, and footer */
+    width: auto;
 }
 
 .mainpages-nav { /* This is for the buttons at the top left on all the main pages, like index.html */
@@ -50,7 +58,7 @@ body { /* just used to get rid of margin for body */
     justify-content: space-evenly;
 }
 
-.header .welcome {
+.header .welcome { /* centers text blurb in header */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -63,17 +71,17 @@ body { /* just used to get rid of margin for body */
     justify-content: center;
 }
 
-.header-images img {
+.header-images img { /* control size of main images in header */
     width: auto;
     height: 8em;
 }
 
-.header .nav-menu {
+.header .nav-menu { /* rules for the headers dropdown menu */
     position: relative;
     max-width: fit-content;
 }
 
-.header .nav-menu-btn {
+.header .nav-menu-btn { /* rules for the nav button, the thing you hover over to see the menu */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -89,11 +97,11 @@ body { /* just used to get rid of margin for body */
     cursor: pointer;
 }
 
-.header .nav-menu-btn img {
+.header .nav-menu-btn img { /* resizes the SVG image in the nav menu button */
     max-height: 24px;
 }
 
-.header .nav-menu-content {
+.header .nav-menu-content { /* rules for the list of options in the dropdown menu */
     display: none;
     position: absolute;
     background-color: red;
@@ -104,11 +112,11 @@ body { /* just used to get rid of margin for body */
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
-.header .nav-menu-content hr {
+.header .nav-menu-content hr { /* needed to not make it look like the list was split in places */
     width: 96%;
 }
 
-.header .nav-menu-content a {
+.header .nav-menu-content a { /* stop the links from being blue and underlined, also makes the link fill the entire block instead of just being text */
     color: white;
     padding: 1em;
     text-decoration: none;
@@ -116,17 +124,17 @@ body { /* just used to get rid of margin for body */
     display: block;
 }
 
-.header .nav-menu-content a:hover {
+.header .nav-menu-content a:hover { /* makes the block you're hovering over turn different color */
     background-color: #cc0000;
 }
 
-.header .nav-menu:hover .nav-menu-content {
+.header .nav-menu:hover .nav-menu-content { /* when you hover over the nav menu button, display the list */
     display: block;
 }
 
-.content { /* this contains all of the contents of the page, except content from mainpages-nav and footer */
-    width: auto;
-}
+/* ======================================================= */
+/* ==================== LAIGEN VERIFY ==================== */
+/* ======================================================= */
 
 .terminal-block { /* neat way to display terminal commands and output */
     overflow: auto;
@@ -157,6 +165,10 @@ body { /* just used to get rid of margin for body */
     border: 3px solid black;
     border-top: none;
 }
+
+/* =========================================================== */
+/* ==================== LAYOUT FOR MOBILE ==================== */
+/* =========================================================== */
 
 @media only screen and (max-width:1280px) { /* At 1280 pixels width and below, apply these rules */
     .main { 
