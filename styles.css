@@ -44,18 +44,84 @@ body { /* just used to get rid of margin for body */
     padding: 1em;
     top: 0;
     background-color: white;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
+    justify-content: space-evenly;
+}
+
+.header .welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.4rem;
 }
 
 .header-images { /* centers images in header */
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .header-images img {
     width: auto;
-    height: 5em;
+    height: 8em;
+}
+
+.header .nav-menu {
+    position: relative;
+    max-width: fit-content;
+}
+
+.header .nav-menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: red;
+    color: white;
+    padding: 16px;
+    min-width: 500px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: inherit;
+    text-align: start;
+    border: none;
+    cursor: pointer;
+}
+
+.header .nav-menu-btn img {
+    max-height: 24px;
+}
+
+.header .nav-menu-content {
+    display: none;
+    position: absolute;
+    background-color: red;
+    color: white;
+    min-width: 500px;
+    max-height: 500px;
+    overflow-y: scroll;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.header .nav-menu-content hr {
+    width: 96%;
+}
+
+.header .nav-menu-content a {
+    color: white;
+    padding: 1em;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+}
+
+.header .nav-menu-content a:hover {
+    background-color: #cc0000;
+}
+
+.header .nav-menu:hover .nav-menu-content {
+    display: block;
 }
 
 .content { /* this contains all of the contents of the page, except content from mainpages-nav and footer */
