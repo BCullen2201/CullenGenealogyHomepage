@@ -58,7 +58,7 @@ body { /* just used to get rid of margin for body */
     justify-content: space-evenly;
 }
 
-.header .whatsnew {
+.header .whatsnew { /* 1st column in header. Only contains 'whatsnew' button, hence the name */
     display: flex;
     justify-self: start;
     background-color: black;
@@ -80,7 +80,7 @@ body { /* just used to get rid of margin for body */
     background-color: red;
 }
 
-.header-images { /* centers images in header */
+.header-images { /* 2nd column in header. centers images */
     grid-column: 2;
     display: flex;
     align-items: center;
@@ -92,7 +92,7 @@ body { /* just used to get rid of margin for body */
     height: 8em;
 }
 
-.header .nav-menu { /* rules for the headers dropdown menu */
+.header .nav-menu { /* 3rd column in header, rules for the headers dropdown menu */
     grid-column: 3;
     position: relative;
     max-width: fit-content;
@@ -148,11 +148,11 @@ body { /* just used to get rid of margin for body */
     display: block;
 }
 
-.main-welcome h1, h2{
+.main-welcome h1, h2{ /* Only on index.html, just removes margin from text. This could be removed and be done in-line instead */
     margin: 0;
 }
 
-footer {
+footer { /* self-explanatory, section at very bottom of page containing additional info and links */
     width: auto;
     min-height: 150px;
     margin: 0;
@@ -176,12 +176,12 @@ footer a {
     color: lightskyblue;
 }
 
-.footer-links {
+.footer-links { /* 1st column in footer, contains the original text found at bottom of page */
     grid-column: 1;
     margin: 1em;
 }
 
-footer .important-links {
+footer .important-links { /* 2st column in footer, contains most important (i think) links for the site */
     grid-column: 2;
     margin: 1em;
     display: flex;
@@ -203,7 +203,7 @@ footer .important-links a:hover {
     text-decoration: underline;
 }
 
-footer .decor {
+footer .decor { /* 3rd column in footer, didn't know what to put here so i just threw in the site logo. we can put something else here instead if need arises */
     display: flex;
     align-items: center;
     justify-content: center;
