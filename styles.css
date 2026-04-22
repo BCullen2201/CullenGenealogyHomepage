@@ -152,6 +152,69 @@ body { /* just used to get rid of margin for body */
     margin: 0;
 }
 
+footer {
+    width: auto;
+    min-height: 150px;
+    margin: 0;
+    margin-left: 91px;
+    border-top: 5px solid red;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    color: white;
+    font-size: 0.8rem;
+    line-height: 1.4;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: lightskyblue;
+}
+
+.footer-links {
+    grid-column: 1;
+    margin: 1em;
+}
+
+footer .important-links {
+    grid-column: 2;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .important-links h3 {
+    margin: 0;
+    margin-bottom: 0.5em;
+}
+
+footer .important-links a {
+    color: white;
+    text-decoration: none;
+    width: fit-content;
+}
+
+footer .important-links a:hover {
+    text-decoration: underline;
+}
+
+footer .decor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+}
+
+footer img {
+    width: auto;
+    height: 124px;
+}
+
 /* ======================================================= */
 /* ==================== LAIGEN VERIFY ==================== */
 /* ======================================================= */
