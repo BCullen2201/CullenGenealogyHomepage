@@ -60,7 +60,7 @@ body { /* just used to get rid of margin for body */
 
 .header .whatsnew {
     display: flex;
-    justify-self: center;
+    justify-self: start;
     background-color: black;
     color: white;
     font-weight: bold;
