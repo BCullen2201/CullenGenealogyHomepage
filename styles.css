@@ -112,6 +112,10 @@ body { /* just used to get rid of margin for body */
     cursor: pointer;
 }
 
+.header .nav-menu:hover .nav-menu-btn { /* when the list is visible, turn the button red */
+    background-color: red;
+}
+
 .header .nav-menu-btn img { /* resizes the SVG image in the nav menu button */
     max-height: 28px;
 }
