@@ -192,9 +192,8 @@ footer .important-links { /* 2st column in footer, contains most important (i th
     flex-direction: column;
 }
 
-footer .important-links h3 {
-    margin: 0;
-    margin-bottom: 0.5em;
+footer .important-links p {
+    font-weight: bold;
 }
 
 footer .important-links a {
