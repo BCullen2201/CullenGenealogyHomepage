@@ -322,6 +322,10 @@ footer .online-since { /* used to style the 'ONLINE SINCE 1996' text */
         border: none;
     }
 
+    .nav .mainpages-nav a:hover {
+        border: none;
+    }
+
     .nav .mainpages-nav img {
         height: 30px;
     }
